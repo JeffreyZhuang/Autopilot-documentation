@@ -5,6 +5,10 @@
   <img src="images/mainboard.webp" width="45%"/>
 </p>
 
+# Coordinate System
+
+<img src="images/coordinate-system.webp" width="45%"/>
+
 # Software Architecture
 
 # State Machine
