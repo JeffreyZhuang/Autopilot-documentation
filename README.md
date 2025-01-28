@@ -7,7 +7,7 @@
 
 # Coordinate System
 
-<img src="images/coordinate-system.webp" width="45%"/>
+<img src="images/coordinate-system.png" width="45%"/>
 
 # Software Architecture
 
