@@ -5,4 +5,14 @@
   <img src="images/mainboard.webp" width="45%"/>
 </p>
 
-# Architectural Overview
+# Software Architecture
+
+# State Machine
+
+# Controller Diagrams
+
+# Parameters and Configurations
+
+# System Startup
+
+# Telemetry
