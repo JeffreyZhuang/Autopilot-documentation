@@ -39,3 +39,4 @@
 - Use Python to read data log in micro-SD card
 - Commands to calibrate barometer, gyroscope, etc.
 - A place to store configuration
+- Don't mix and match seconds and microseconds
