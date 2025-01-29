@@ -13,13 +13,17 @@
 
 # State Machine
 
-**Control**
-- **Manual:** The pilot's control inputs (raw user inputs from RC transmitter) are passed directly to servos
+**Manual Modes**
+- **Manual:** The pilot's control inputs (raw user inputs from RC transmitter) are passed directly to servos. No sensor feedback is used.
 - **Stabilized:** The pilot's pitch and roll inputs are passed as angle commands to the autopilot
-- **Auto:**
 
-Navigation
-- Estimator Initilization
+**Auto Modes**
+- **Takeoff:**
+- **Cruise:**
+- **Landing:**
+
+**Navigation**
+- **Estimator Initilization:** INS alignment
 
 # Controller Diagrams
 
