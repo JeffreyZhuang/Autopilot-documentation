@@ -20,3 +20,7 @@
 # System Startup
 
 # Telemetry
+
+# TODO
+- Telemetry
+- Switching between manual and auto flight state
