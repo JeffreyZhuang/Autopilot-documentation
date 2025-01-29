@@ -13,6 +13,13 @@
 
 # State Machine
 
+Control
+- Manual
+- Stabalized
+- Auto
+Navigation
+- Estimator Initilization
+
 # Controller Diagrams
 
 # Parameters and Configurations
