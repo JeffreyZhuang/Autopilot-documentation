@@ -38,3 +38,4 @@
 - Switching between manual and auto flight state
 - Use Python to read data log in micro-SD card
 - Commands to calibrate barometer, gyroscope, etc.
+- A place to store configuration
