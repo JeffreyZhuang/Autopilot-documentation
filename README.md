@@ -13,10 +13,10 @@
 
 # State Machine
 
-Control
-- Manual
-- Stabalized
-- Auto
+**Control**
+- **Manual:** The pilot's control inputs (raw user inputs from RC transmitter) are passed directly to servos
+- **Stabilized:** The pilot's pitch and roll inputs are passed as angle commands to the autopilot
+- **Auto:**
 
 Navigation
 - Estimator Initilization
