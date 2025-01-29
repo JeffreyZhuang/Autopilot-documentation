@@ -11,6 +11,10 @@
 
 # Software Architecture
 
+## Update Rates
+
+The main loop and PID controllers run at 100Hz. The servo library limits the update rate to the maximum allowed by the servos (50Hz).
+
 # State Machine
 
 **Manual Modes**
