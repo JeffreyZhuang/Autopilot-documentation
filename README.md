@@ -18,13 +18,14 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 # State Machine
 
 **Manual Modes**
-- **Manual:** The pilot's control inputs (raw user inputs from RC transmitter) are passed directly to servos. No sensor feedback is used.
-- **Stabilized:** The pilot directly commands the roll and pitch angle. Thrust is directly set by the pilot.
+- **MANUAL:** The pilot's control inputs (raw user inputs from RC transmitter) are passed directly to servos. No sensor feedback is used.
+- **STABILIZED:** The pilot directly commands the roll and pitch angle. Thrust is directly set by the pilot.
 
 **Auto Modes**
-- **Takeoff:** The throttle is set to the takeoff thrust and the plane holds a pitch angle TAKEOFF_PTCH. Once the altitude is above the takeoff altitude threshold TAKEOFF_ALT, the plane switches to cruise mode.
-- **Cruise:** Waypoint following
-- **Land:**
+- **TAKEOFF_DETECT**: If the acceleration is above LAUN_ACC_THLD for LAUN_ACC_TIME seconds, the plane switches to takeoff mode.
+- **TAKEOFF** After LAUN_MOT_DEL seconds has passed after takeoff is detected, the throttle is set to the takeoff thrust and the plane holds a pitch angle TAKEOFF_PTCH. Once the altitude is above the takeoff altitude threshold TAKEOFF_ALT, the plane switches to cruise mode.
+- **MISSION:** Waypoint following
+- **LAND:**
 
 **Navigation**
 - **Estimator Initilization:** Wait for position and attitude estimates to align and stabalize
