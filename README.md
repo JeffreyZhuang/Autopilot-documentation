@@ -23,7 +23,7 @@
 - **Land:**
 
 **Navigation**
-- **Estimator Initilization:** INS alignment
+- **Estimator Initilization:** Wait for position and attitude estimates to align and stabalize
 
 # Controller Diagrams
 
@@ -37,3 +37,4 @@
 - Telemetry
 - Switching between manual and auto flight state
 - Use Python to read data log in micro-SD card
+- Commands to calibrate barometer, gyroscope, etc.
