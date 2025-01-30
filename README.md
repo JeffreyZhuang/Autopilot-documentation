@@ -40,6 +40,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 # Telemetry
 
+## Loading Waypoints
 Waypoints are loaded via radio
 
 # TODO
