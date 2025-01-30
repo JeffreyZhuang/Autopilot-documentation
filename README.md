@@ -42,6 +42,14 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 ## TX Protocol
 
+| Month    | Savings |
+| -------- | ------- |
+| January  | $250    |
+| February | $80     |
+| March    | $420    |
+
+## RX Protocol
+
 ## Loading Waypoints
 Waypoints are loaded via radio
 
