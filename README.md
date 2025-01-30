@@ -42,11 +42,11 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 ## TX Protocol
 
-| Byte Index    | Savings |
-| -- | ------- |
-| 0  | $250    |
-| 1 | $80     |
-| 2    | $420    |
+| Byte Index | Content | Value |
+| ---------- | ------- | ----- |
+| 0          | Header  | 0x0F  |
+| 1          | Payload | 0     |
+| 2          | Footer  | 0xFF  |
 
 ## RX Protocol
 
