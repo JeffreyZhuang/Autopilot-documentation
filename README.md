@@ -39,6 +39,8 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 # Telemetry
 
+Waypoints are loaded via radio
+
 # TODO
 - Telemetry
 - Switching between manual and auto flight state
