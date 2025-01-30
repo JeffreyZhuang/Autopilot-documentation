@@ -22,7 +22,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 - **STABILIZED:** The pilot directly commands the roll and pitch angle. Thrust is directly set by the pilot.
 
 **Auto Modes**
-- **STRATUP**: Estimator initialization and receives waypoints from radio. Once complete, the plane switches to TAKEOFF_DETECT mode.
+- **STARTUP**: Estimator initialization and receives waypoints from radio. Once complete, the plane switches to TAKEOFF_DETECT mode.
 - **TAKEOFF_DETECT**: If the acceleration is above LAUN_ACC_THLD for LAUN_ACC_TIME seconds, the plane switches to TAKEOFF mode.
 - **TAKEOFF** After LAUN_MOT_DEL seconds has passed after takeoff is detected, the throttle is set to the TAKEOFF_THR and the plane holds a pitch angle TAKEOFF_PTCH. Once the altitude is above the takeoff altitude threshold TAKEOFF_ALT, the plane switches to cruise mode.
 - **MISSION:** Waypoint following
