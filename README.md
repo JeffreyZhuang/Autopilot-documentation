@@ -40,7 +40,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 # Telemetry
 
-## TX Protocol
+## Downlink Protocol
 
 | Byte Index | Content | Value |
 | ---------- | ------- | ----- |
@@ -48,7 +48,13 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 | 1          | Payload | 0     |
 | 2          | Footer  | 0xFF  |
 
-## RX Protocol
+## Uplink Protocol
+
+| Byte Index | Content      | Value |
+| ---------- | ------------ | ----- |
+| 0          | Header       | 0x0F  |
+| 1          | Message type | 0     |
+| 2          | Footer       | 0xFF  |
 
 ## Loading Waypoints
 Waypoints are loaded via radio
