@@ -52,6 +52,8 @@ Fixed packet size of 40 bytes and a payload of 38 bytes
 
 ## Interface layer
 
+The following paylods are injected into the "payloads" section of the transport protocol layer.
+
 ### Telemetry Payload
 
 | Byte Index | Content          | Type    |
