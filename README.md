@@ -46,7 +46,7 @@ Fixed packet size of 40 bytes and a payload of 38 bytes
 
 | Byte Index | Content                            | Type    |
 | ---------- | ---------------------------------- | ------- |
-| 0          | Start byte                         | uint8_t |
+| 0          | Start byte (0x00)                  | uint8_t |
 | 1          | Consistent Overhead Byte Shuffling | uint8_t |
 | 2-39       | Payload                            |         |
 
