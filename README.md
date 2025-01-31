@@ -50,7 +50,9 @@ Fixed packet size of 40 bytes and a payload of 38 bytes
 | 1          | Consistent Overhead Byte Shuffling | uint8_t |
 | 2-39       | Payload                            |         |
 
-## Telemetry Payload
+## Interface layer
+
+### Telemetry Payload
 
 | Byte Index | Content          | Type    |
 | ---------- | ---------------- | ------- |
@@ -64,7 +66,7 @@ Fixed packet size of 40 bytes and a payload of 38 bytes
 | 25-28      | Longitude        | float   |
 | 29-37      | Empty | |
 
-## Command Payload
+### Command Payload
 
 | Byte Index | Content          | Type    |
 | ---------- | ---------------- | ------- |
@@ -72,7 +74,7 @@ Fixed packet size of 40 bytes and a payload of 38 bytes
 | 1          | Command          | uint8_t |
 | 2-37       | Empty ||
 
-## Waypoint Payload
+### Waypoint Payload
 
 | Byte Index | Content                            | Type    |
 | ---------- | ---------------------------------- | ------- |
@@ -83,7 +85,7 @@ Fixed packet size of 40 bytes and a payload of 38 bytes
 | 10-13      | Position Down                      | float   |
 | 14-37      | Empty ||
 
-## Message types
+### Message types
 
 | Message Type | Value |
 | ------------ | ----- |
@@ -91,16 +93,12 @@ Fixed packet size of 40 bytes and a payload of 38 bytes
 | Command      | 1     |
 | Waypoint     | 2     |
 
-## Command types
+### Command types
 
 | Command              | Value |
 | -------------------- | ----- |
 | Calibrate Gyroscopes | 0     |
 | Calibrate Barometer  | 1     |
-
-## Loading Waypoints
-Waypoints are loaded via radio
-Transmit command for waypoint, then transmit waypoint number, then transmit waypoint.
 
 # TODO
 - Telemetry
