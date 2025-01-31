@@ -40,7 +40,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 # Telemetry
 
-## Downlink Protocol
+## Telemetry Protocol
 
 | Byte Index | Content      | Value |
 | ---------- | ------------ | ----- |
@@ -50,7 +50,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 | 3          | Message type |       |
 | 4          | Checksum     | 0xFF  |
 
-## Uplink Protocol
+## Command Protocol
 
 | Byte Index | Content      | Value |
 | ---------- | ------------ | ----- |
