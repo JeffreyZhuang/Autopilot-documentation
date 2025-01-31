@@ -56,7 +56,7 @@ Fixed packet size of 40 bytes and a payload of 38 bytes
 
 | Byte Index | Content          | Type    |
 | ---------- | ---------------- | ------- |
-| 0          | Message Type (0) | uint8_t |
+| 0          | Payload Type (0) | uint8_t |
 | 1-4        | Roll             | float   |
 | 5-8        | Pitch            | float   |
 | 9-12       | Heading          | float   |
@@ -70,24 +70,24 @@ Fixed packet size of 40 bytes and a payload of 38 bytes
 
 | Byte Index | Content          | Type    |
 | ---------- | ---------------- | ------- |
-| 0          | Message Type (1) | uint8_t |
+| 0          | Payload Type (1) | uint8_t |
 | 1          | Command          | uint8_t |
-| 2-37       | Empty ||
+| 2-37       | Empty            |         |
 
 ### Waypoint Payload
 
 | Byte Index | Content                            | Type    |
 | ---------- | ---------------------------------- | ------- |
-| 0          | Message Type (2)        | uint8_t |
+| 0          | Payload Type (2)        | uint8_t |
 | 1          | Waypoint Index        | uint8_t |
 | 2-5        | Position North                     | float   |
 | 6-9        | Position East                      | float   |
 | 10-13      | Position Down                      | float   |
 | 14-37      | Empty ||
 
-### Message types
+### Payload types
 
-| Message Type | Value |
+| Payload Type | Value |
 | ------------ | ----- |
 | Telemetry    | 0     |
 | Command      | 1     |
