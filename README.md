@@ -42,7 +42,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 ## Transport Protocol Layer
 
-Fixed length of 40 bytes
+Fixed packet size of 40 bytes and a payload of 38 bytes
 
 | Byte Index | Content                            | Type    |
 | ---------- | ---------------------------------- | ------- |
@@ -50,13 +50,10 @@ Fixed length of 40 bytes
 | 1          | Consistent Overhead Byte Shuffling | uint8_t |
 | 2-39       | Payload                            |         |
 
-## Telemetry
+## Telemetry Payload
 
 | Byte Index | Content                            | Type    |
 | ---------- | ---------------------------------- | ------- |
-| 0          | Start byte                         | uint8_t |
-| 1          | Length                             | uint8_t |
-| 2          | Consistent Overhead Byte Shuffling | uint8_t |
 | 3-6        | Roll                               | float   |
 | 7-10       | Pitch                              | float   |
 | 11-14      | Heading                            | float   |
@@ -64,31 +61,22 @@ Fixed length of 40 bytes
 | 19-22      | Speed                              | float   |
 | 23-26      | Latitude                           | float   |
 | 27-30      | Longitude                          | float   |
-| 31         | Checksum                           | uint8_t |
 
-## Commands
+## Command Payload
 
 | Byte Index | Content                            | Type    |
 | ---------- | ---------------------------------- | ------- |
-| 0          | Start byte                         | uint8_t |
-| 1          | Length                             | uint8_t |
-| 2          | Consistent Overhead Byte Shuffling | uint8_t |
 | 3          | Command                            | uint8_t |
-| 4          | Checksum                           | uint8_t |
 
-## Waypoints
+## Waypoint Payload
 
 | Byte Index | Content                            | Type    |
 | ---------- | ---------------------------------- | ------- |
-| 0          | Start byte                         | uint8_t |
-| 1          | Length                             | uint8_t |
-| 2          | Consistent Overhead Byte Shuffling | uint8_t |
 | 3          | Waypoint Command (0)               | uint8_t |
 | 4          | Waypoint Index                     | uint8_t |
 | 5-8        | Position North                     | float   |
 | 9-12       | Position East                      | float   |
 | 13-16      | Position Down                      | float   |
-| 17         | Checksum                           | uint8_t |
 
 ## Command types
 
