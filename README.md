@@ -67,11 +67,11 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 | 3          | Command                            | uint8_t |
 | 4          | Checksum                           | uint8_t |
 
-## Message types
+## Command types
 
-| Message type         | Value | Explanation |
-| -------------------- | ----- | ----------- |
-| Calibrate Gyroscopes | 101   |             |
+| Command              | Value |
+| -------------------- | ----- |
+| Calibrate Gyroscopes | 101   |
 
 ## Loading Waypoints
 Waypoints are loaded via radio
