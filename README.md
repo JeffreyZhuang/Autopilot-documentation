@@ -40,7 +40,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 # Telemetry
 
-## Telemetry Protocol
+## Serialization
 
 | Byte Index | Content      | Value |
 | ---------- | ------------ | ----- |
@@ -49,16 +49,6 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 | 2          | Consistent Overhead Byte Shuffling | |
 | 3-30       | Payload      |       |
 | 31         | Checksum     | 0xFF  |
-
-## Command Protocol
-
-| Byte Index | Content      | Value |
-| ---------- | ------------ | ----- |
-| 0          | Start byte   | 0x0F  |
-| 1          | Length       |       |
-| 2          | Consistent Overhead Byte Shuffling | |
-| 3          | Message type |       |
-| 4          | Checksum     | 0xFF  |
 
 ## Message types
 
