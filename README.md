@@ -42,30 +42,30 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 ## Telemetry
 
-| Byte Index | Content      | Type    |
-| ---------- | ------------ | ------- |
-| 0          | Start byte   | uint8_t |
-| 1          | Length       | uint8_t |
+| Byte Index | Content                            | Type    |
+| ---------- | ---------------------------------- | ------- |
+| 0          | Start byte                         | uint8_t |
+| 1          | Length                             | uint8_t |
 | 2          | Consistent Overhead Byte Shuffling | uint8_t |
-| 3-6        | Roll      | float |
-| 7-10       | Pitch      | float |
-| 11-14      | Heading      | float |
-| 15-18      | Altitude      | float |
-| 19-22        | Speed      | float |
-| 23-26        | Latitude      | float |
-| 27-30        | Longitude      | float |
-| 31        | Manual Switch    | bool |
-| 32         | Checksum     | uint8_t  |
+| 3-6        | Roll                               | float   |
+| 7-10       | Pitch                              | float   |
+| 11-14      | Heading                            | float   |
+| 15-18      | Altitude                           | float   |
+| 19-22      | Speed                              | float   |
+| 23-26      | Latitude                           | float   |
+| 27-30      | Longitude                          | float   |
+| 31         | Manual Switch                      | bool    |
+| 32         | Checksum                           | uint8_t |
 
 ## Commands
 
-| Byte Index | Content      | Value |
-| ---------- | ------------ | ----- |
-| 0          | Start byte   | 0x0F  |
-| 1          | Length       |       |
-| 2          | Consistent Overhead Byte Shuffling | |
-| 3-30       | Payload      |       |
-| 31         | Checksum     | 0xFF  |
+| Byte Index | Content                            | Type    |
+| ---------- | ---------------------------------- | ------- |
+| 0          | Start byte                         | uint8_t |
+| 1          | Length                             | uint8_t |
+| 2          | Consistent Overhead Byte Shuffling | uint8_t |
+| 3          | Command                            | uint8_t |
+| 4          | Checksum                           | uint8_t |
 
 ## Message types
 
