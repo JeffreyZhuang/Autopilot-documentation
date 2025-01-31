@@ -54,8 +54,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 | 19-22      | Speed                              | float   |
 | 23-26      | Latitude                           | float   |
 | 27-30      | Longitude                          | float   |
-| 31         | Manual Switch                      | bool    |
-| 32         | Checksum                           | uint8_t |
+| 31         | Checksum                           | uint8_t |
 
 ## Commands
 
