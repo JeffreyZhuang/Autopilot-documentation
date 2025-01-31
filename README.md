@@ -52,39 +52,51 @@ Fixed packet size of 40 bytes and a payload of 38 bytes
 
 ## Telemetry Payload
 
-| Byte Index | Content                            | Type    |
-| ---------- | ---------------------------------- | ------- |
-| 3-6        | Roll                               | float   |
-| 7-10       | Pitch                              | float   |
-| 11-14      | Heading                            | float   |
-| 15-18      | Altitude                           | float   |
-| 19-22      | Speed                              | float   |
-| 23-26      | Latitude                           | float   |
-| 27-30      | Longitude                          | float   |
+| Byte Index | Content          | Type    |
+| ---------- | ---------------- | ------- |
+| 0          | Message Type (0) | uint8_t |
+| 1-4        | Roll             | float   |
+| 5-8        | Pitch            | float   |
+| 9-12       | Heading          | float   |
+| 13-16      | Altitude         | float   |
+| 17-20      | Speed            | float   |
+| 21-24      | Latitude         | float   |
+| 25-28      | Longitude        | float   |
+| 29-37      | Empty | |
 
 ## Command Payload
 
-| Byte Index | Content                            | Type    |
-| ---------- | ---------------------------------- | ------- |
-| 3          | Command                            | uint8_t |
+| Byte Index | Content          | Type    |
+| ---------- | ---------------- | ------- |
+| 0          | Message Type (1) | uint8_t |
+| 1          | Command          | uint8_t |
+| 2-37       | Empty ||
 
 ## Waypoint Payload
 
 | Byte Index | Content                            | Type    |
 | ---------- | ---------------------------------- | ------- |
-| 3          | Waypoint Command (0)               | uint8_t |
-| 4          | Waypoint Index                     | uint8_t |
-| 5-8        | Position North                     | float   |
-| 9-12       | Position East                      | float   |
-| 13-16      | Position Down                      | float   |
+| 0          | Message Type (2)        | uint8_t |
+| 1          | Waypoint Index        | uint8_t |
+| 2-5        | Position North                     | float   |
+| 6-9        | Position East                      | float   |
+| 10-13      | Position Down                      | float   |
+| 14-37      | Empty ||
+
+## Message types
+
+| Message Type | Value |
+| ------------ | ----- |
+| Telemetry    | 0     |
+| Command      | 1     |
+| Waypoint     | 2     |
 
 ## Command types
 
 | Command              | Value |
 | -------------------- | ----- |
-| Waypoint Command     | 0     |
-| Calibrate Gyroscopes | 1     |
-| Calibrate Barometer  | 2     |
+| Calibrate Gyroscopes | 0     |
+| Calibrate Barometer  | 1     |
 
 ## Loading Waypoints
 Waypoints are loaded via radio
