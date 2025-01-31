@@ -52,9 +52,10 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 | Byte Index | Content      | Value |
 | ---------- | ------------ | ----- |
-| 0          | Header       | 0x0F  |
-| 1          | Message type |       |
-| 2          | Footer       | 0xFF  |
+| 0          | Start byte   | 0x0F  |
+| 1          | Length       |       |
+| 2          | Message type |       |
+| 3          | Checksum     | 0xFF  |
 
 ## Message types
 
