@@ -40,6 +40,16 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 # Radio Communications Link
 
+## Transport Protocol Layer
+
+Fixed length of 40 bytes
+
+| Byte Index | Content                            | Type    |
+| ---------- | ---------------------------------- | ------- |
+| 0          | Start byte                         | uint8_t |
+| 1          | Consistent Overhead Byte Shuffling | uint8_t |
+| 2-39       | Payload                            |         |
+
 ## Telemetry
 
 | Byte Index | Content                            | Type    |
