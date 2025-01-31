@@ -67,11 +67,27 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 | 3          | Command                            | uint8_t |
 | 4          | Checksum                           | uint8_t |
 
+## Waypoints
+
+| Byte Index | Content                            | Type    |
+| ---------- | ---------------------------------- | ------- |
+| 0          | Start byte                         | uint8_t |
+| 1          | Length                             | uint8_t |
+| 2          | Consistent Overhead Byte Shuffling | uint8_t |
+| 3          | Waypoint Command (0)               | uint8_t |
+| 4          | Waypoint Index                     | uint8_t |
+| 5-8        | Position North                     | float   |
+| 9-12       | Position East                      | float   |
+| 13-16      | Position Down                      | float   |
+| 17         | Checksum                           | uint8_t |
+
 ## Command types
 
 | Command              | Value |
 | -------------------- | ----- |
-| Calibrate Gyroscopes | 101   |
+| Waypoint Command     | 0     |
+| Calibrate Gyroscopes | 1     |
+| Calibrate Barometer  | 2     |
 
 ## Loading Waypoints
 Waypoints are loaded via radio
