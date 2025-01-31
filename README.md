@@ -42,7 +42,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 
 ## Transport Protocol Layer
 
-Fixed packet size of 40 bytes and a payload of 38 bytes
+Fixed packet size of 40 bytes and a payload of 38 bytes, therefore no length byte is needed.
 
 | Byte Index | Content                            | Type    |
 | ---------- | ---------------------------------- | ------- |
