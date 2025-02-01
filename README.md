@@ -20,9 +20,8 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 # State Machine
 
 **System Modes**
-- **BOOT:** Calibrate barometer and set home position
-- **MANUAL:** Execute manual mode
-- **AUTO:** Execute auto mode
+- **BOOT:** Calibrate barometer and set home position. Once boot is complete and the vehicle has been armed, the system mode switches to flight.
+- **FLIGHT:** Execute manual and auto modes
 
 **Manual Modes**
 - **MANUAL:** The pilot's control inputs (raw user inputs from RC transmitter) are passed directly to servos. No sensor feedback is used.
