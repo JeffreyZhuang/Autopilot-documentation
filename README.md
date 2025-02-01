@@ -87,7 +87,7 @@ The following paylods are injected into the "payloads" section of the transport 
 | 10-13      | Position Down    | float   |
 | 14-37      | Empty            |         |
 
-### Payload types
+### Payload Types
 
 | Payload Type | Value |
 | ------------ | ----- |
