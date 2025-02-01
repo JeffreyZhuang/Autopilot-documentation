@@ -66,26 +66,26 @@ The following paylods are injected into the "payloads" section of the transport 
 | 17-20      | Speed            | float   |
 | 21-24      | Latitude         | float   |
 | 25-28      | Longitude        | float   |
-| 29-37      | Empty | |
+| 29-37      | Empty            |         |
 
 ### Command Payload
 
 | Byte Index | Content          | Type    |
 | ---------- | ---------------- | ------- |
 | 0          | Payload Type (1) | uint8_t |
-| 1          | Command          | uint8_t |
+| 1          | Command ID       | uint8_t |
 | 2-37       | Empty            |         |
 
 ### Waypoint Payload
 
-| Byte Index | Content                            | Type    |
-| ---------- | ---------------------------------- | ------- |
-| 0          | Payload Type (2)        | uint8_t |
-| 1          | Waypoint Index        | uint8_t |
-| 2-5        | Position North                     | float   |
-| 6-9        | Position East                      | float   |
-| 10-13      | Position Down                      | float   |
-| 14-37      | Empty ||
+| Byte Index | Content          | Type    |
+| ---------- | -----------------| ------- |
+| 0          | Payload Type (2) | uint8_t |
+| 1          | Waypoint Index   | uint8_t |
+| 2-5        | Position North   | float   |
+| 6-9        | Position East    | float   |
+| 10-13      | Position Down    | float   |
+| 14-37      | Empty            |         |
 
 ### Payload types
 
@@ -95,12 +95,12 @@ The following paylods are injected into the "payloads" section of the transport 
 | Command      | 1     |
 | Waypoint     | 2     |
 
-### Command types
+### Command ID List
 
-| Command              | Value |
-| -------------------- | ----- |
-| Calibrate Gyroscopes | 0     |
-| Calibrate Barometer  | 1     |
+| Command              | Command ID Value |
+| -------------------- | ---------------- |
+| Calibrate Gyroscopes | 0                |
+| Calibrate Barometer  | 1                |
 
 # TODO
 - Telemetry
