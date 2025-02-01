@@ -9,6 +9,8 @@
 
 <img src="images/coordinate-system.png" width="45%"/>
 
+The Kalman filter calculates the position in meters in reference to the position of the first GPS fix.
+
 # Software Architecture
 
 ## Update Rates
