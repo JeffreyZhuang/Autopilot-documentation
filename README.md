@@ -24,7 +24,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 - **FLIGHT:** Execute manual and auto modes
 
 **Manual Modes**
-- **MANUAL:** The pilot's control inputs (raw user inputs from RC transmitter) are passed directly to servos. No sensor feedback is used.
+- **DIRECT:** The pilot's control inputs (raw user inputs from RC transmitter) are passed directly to servos. No sensor feedback is used.
 - **STABILIZED:** The pilot directly commands the roll and pitch angle. Thrust is directly set by the pilot.
 
 **Auto Modes**
