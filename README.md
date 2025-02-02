@@ -32,7 +32,9 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 - **TAKEOFF_DETECT**: If the acceleration is above LAUN_ACC_THLD for LAUN_ACC_TIME seconds, the plane switches to TAKEOFF mode.
 - **TAKEOFF** After LAUN_MOT_DEL seconds has passed after takeoff is detected, the throttle is set to the TAKEOFF_THR and the plane holds a pitch angle TAKEOFF_PTCH. Once the altitude is above the takeoff altitude threshold TAKEOFF_ALT, the plane switches to MISSION mode.
 - **MISSION:** Waypoint following. When passed final waypoint, the plane siwtches to LAND mode.
-- **LAND:**
+- **LAND:** Follows a 10 degree glideslope to the landing point
+- **FLARE:**
+- **TOUCHDOWN:**
 
 # Controller Diagrams
 
