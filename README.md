@@ -69,7 +69,7 @@ The following paylods are injected into the "payloads" section of the transport 
 | 17-20      | Speed            | float   |
 | 21-24      | Latitude         | float   |
 | 25-28      | Longitude        | float   |
-| 29         | Mode (see modes) | uint8_t |
+| 29         | Mode ID          | uint8_t |
 | 30-37      | Empty            |         |
 
 ### Command Payload
@@ -106,14 +106,18 @@ The following paylods are injected into the "payloads" section of the transport 
 | Calibrate Gyroscopes | 0                |
 | Calibrate Barometer  | 1                |
 
-### Modes
-| Mode | Name    |
-| ---- | ------- |
-| 0    | BOOT    |
-| 1    | MANUAL  |
-| 2    | READY   |
-| 3    | TAKEOFF |
-| 4    | MISSION |
+### Mode IDs
+| Mode | Name        |
+| ---- | ----------- |
+| 0    | BOOT        |
+| 1    |             |
+| 2    | MANUAL      |
+| 3    | STABILIZED  |
+| 4    | READY       |
+| 5    | TAKEOFF     |
+| 6    | MISSION     |
+| 7    | LAND        |
+| 8    | FLARE       |
 
 # TODO
 - Telemetry
