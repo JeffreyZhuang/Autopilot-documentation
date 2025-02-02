@@ -119,6 +119,12 @@ The following paylods are injected into the "payloads" section of the transport 
 | 7    | LAND        |
 | 8    | FLARE       |
 
+# Procedures
+
+## Takeoff
+
+Turn direct and mode switches to manual, cut throttle, and wait until GNSS fix and it will switch to from boot to manual mode.
+
 # TODO
 - Telemetry
 - Switching between manual and auto flight state
