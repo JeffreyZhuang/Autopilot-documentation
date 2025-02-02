@@ -30,13 +30,9 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 **Auto Modes**
 - **STARTUP**: Estimator initialization and receives waypoints from radio. The home lat/lon reference is set to the position of the first GPS fix. Once complete, the plane switches to TAKEOFF_DETECT mode.
 - **TAKEOFF_DETECT**: If the acceleration is above LAUN_ACC_THLD for LAUN_ACC_TIME seconds, the plane switches to TAKEOFF mode.
-- **TAKEOFF** After LAUN_MOT_DEL seconds has passed after takeoff is detected, the throttle is set to the TAKEOFF_THR and the plane holds a pitch angle TAKEOFF_PTCH. Once the altitude is above the takeoff altitude threshold TAKEOFF_ALT, the plane switches to cruise mode.
-- **MISSION:** Waypoint following
+- **TAKEOFF** After LAUN_MOT_DEL seconds has passed after takeoff is detected, the throttle is set to the TAKEOFF_THR and the plane holds a pitch angle TAKEOFF_PTCH. Once the altitude is above the takeoff altitude threshold TAKEOFF_ALT, the plane switches to MISSION mode.
+- **MISSION:** Waypoint following. When passed final waypoint, the plane siwtches to LAND mode.
 - **LAND:**
-
-**Navigation**
-- **INITIALIZATION:** Wait for position and attitude estimates to align and stabalize
-- **LIVE**: Full INS/GPS fusion 
 
 # Controller Diagrams
 
