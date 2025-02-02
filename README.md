@@ -20,7 +20,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 # State Machine
 
 **System Modes**
-- **BOOT:** Calibrate barometer and set home position. Once boot is complete, the transmitter is in a safe state, and the vehicle has been armed, the system mode switches to flight.
+- **BOOT:** Calibrate barometer, recieve waypoints from GCS, set home position to first GPS fix. Once boot is complete, the transmitter is in a safe state, and the vehicle has been armed, the system mode switches to flight.
 - **FLIGHT:** Execute manual and auto modes
 
 **Manual Modes**
@@ -28,8 +28,7 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 - **STABILIZED:** The pilot directly commands the roll and pitch angle. Thrust is directly set by the pilot.
 
 **Auto Modes**
-- **STARTUP**: Estimator initialization and receives waypoints from radio. The home lat/lon reference is set to the position of the first GPS fix. Once complete, the plane switches to TAKEOFF_DETECT mode.
-- **TAKEOFF_DETECT**: If the acceleration is above LAUN_ACC_THLD for LAUN_ACC_TIME seconds, the plane switches to TAKEOFF mode.
+- **READY**: Detecting takeoff and waiting for flight. If the acceleration is above LAUN_ACC_THLD for LAUN_ACC_TIME seconds, the plane switches to TAKEOFF mode.
 - **TAKEOFF** After LAUN_MOT_DEL seconds has passed after takeoff is detected, the throttle is set to the TAKEOFF_THR and the plane holds a pitch angle TAKEOFF_PTCH. Once the altitude is above the takeoff altitude threshold TAKEOFF_ALT, the plane switches to MISSION mode.
 - **MISSION:** Waypoint following. When passed final waypoint, the plane siwtches to LAND mode.
 - **LAND:** Adjust altitude setpoint to follows a 10 degree glideslope to the landing point. Track heading is set to the runway heading. When the altitude is below LAND_FLARE_ALT, the plane switches to FLARE mode.
