@@ -121,9 +121,17 @@ The following paylods are injected into the "payloads" section of the transport 
 
 # Procedures
 
-## Takeoff
+## Startup
 
 Turn direct and mode switches to manual, cut throttle, and wait until GNSS fix and it will switch to from boot to manual mode.
+
+## Takeoff
+
+Throw the plane and immediately move the throttle stick up. After the throttle stick is up, it will put the plane in takeoff mode and climb automatically.
+
+## Emergency
+
+Flip the manual switch to put the plane into direct mode.
 
 # TODO
 - Telemetry
