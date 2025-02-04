@@ -138,9 +138,6 @@ Toggle the manual switch and fly the plane in DIRECT mode. The plane will not sw
 Flip the manual switch to put the plane into DIRECT mode.
 
 # TODO
-- Telemetry
-- Switching between manual and auto flight state
 - Use Python to read data log in micro-SD card
 - Commands to calibrate barometer, gyroscope, etc.
-- A place to store configuration
 - Don't mix and match seconds and microseconds
