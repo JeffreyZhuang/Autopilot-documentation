@@ -59,18 +59,18 @@ The following paylods are injected into the "payloads" section of the transport 
 
 ### Telemetry Payload
 
-| Byte Index | Content          | Type    |
-| ---------- | ---------------- | ------- |
-| 0          | Payload Type (0) | uint8_t |
-| 1-4        | Roll             | float   |
-| 5-8        | Pitch            | float   |
-| 9-12       | Heading          | float   |
-| 13-16      | Altitude         | float   |
-| 17-20      | Speed            | float   |
-| 21-24      | Latitude         | float   |
-| 25-28      | Longitude        | float   |
-| 29         | Mode ID          | uint8_t |
-| 30-37      | Empty            |         |
+| Byte Index | Content          | Type     |
+| ---------- | ---------------- | -------- |
+| 0          | Payload Type (0) | uint8_t  |
+| 1-2        | Roll deg*100     | int16_t  |
+| 3-4        | Pitch deg*100    | int16_t  |
+| 5-6        | Heading deg*100  | uint16_t |
+| 7-8        | Altitude m*10    | int16_t  |
+| 9-10       | Speed m/s*10     | int16_t  |
+| 11-14      | Latitude         | float    |
+| 15-18      | Longitude        | float    |
+| 29         | Mode ID          | uint8_t  |
+| 30-37      | Empty            |          |
 
 ### Command Payload
 
