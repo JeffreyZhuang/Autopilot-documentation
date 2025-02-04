@@ -129,9 +129,13 @@ Turn direct and mode switches to manual, cut throttle, and wait until GNSS fix a
 
 Cut throttle, mode switch down, manual switch down, to put in READY mode. Throw the plane and immediately move the throttle stick up. After the throttle stick is up, it will put the plane in TAKEOFF mode and climb automatically.
 
+## Aborted Autoland
+
+Toggle the manual switch and fly the plane in DIRECT mode. The plane will not switch back into auto mode after an aborted autoland. Only DIRECT and STABILIZE are available.
+
 ## Emergency
 
-Flip the manual switch to put the plane into direct mode.
+Flip the manual switch to put the plane into DIRECT mode.
 
 # TODO
 - Telemetry
