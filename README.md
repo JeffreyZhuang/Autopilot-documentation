@@ -110,7 +110,7 @@ The following paylods are injected into the "payloads" section of the transport 
 | Mode | Name        |
 | ---- | ----------- |
 | 0    | BOOT        |
-| 1    |             |
+| 1    | -           |
 | 2    | MANUAL      |
 | 3    | STABILIZED  |
 | 4    | READY       |
