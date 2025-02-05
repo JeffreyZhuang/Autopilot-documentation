@@ -72,6 +72,18 @@ The following paylods are injected into the "payloads" section of the transport 
 | 29         | Mode ID          | uint8_t  |
 | 30-37      | Empty            |          |
 
+| Mode | Name        |
+| ---- | ----------- |
+| 0    | BOOT        |
+| 1    | -           |
+| 2    | MANUAL      |
+| 3    | STABILIZED  |
+| 4    | READY       |
+| 5    | TAKEOFF     |
+| 6    | MISSION     |
+| 7    | LAND        |
+| 8    | FLARE       |
+
 ### Command Payload
 
 | Byte Index | Content          | Type    |
@@ -79,6 +91,11 @@ The following paylods are injected into the "payloads" section of the transport 
 | 0          | Payload Type (1) | uint8_t |
 | 1          | Command ID       | uint8_t |
 | 2-37       | Empty            |         |
+
+| Command              | Command ID Value |
+| -------------------- | ---------------- |
+| Calibrate Gyroscopes | 0                |
+| Calibrate Barometer  | 1                |
 
 ### Waypoint Payload
 
@@ -91,33 +108,11 @@ The following paylods are injected into the "payloads" section of the transport 
 | 10-13      | Position Down    | float   |
 | 14-37      | Empty            |         |
 
-### Payload Types
-
 | Payload Type | Value |
 | ------------ | ----- |
 | Telemetry    | 0     |
 | Command      | 1     |
 | Waypoint     | 2     |
-
-### Command ID List
-
-| Command              | Command ID Value |
-| -------------------- | ---------------- |
-| Calibrate Gyroscopes | 0                |
-| Calibrate Barometer  | 1                |
-
-### Mode IDs
-| Mode | Name        |
-| ---- | ----------- |
-| 0    | BOOT        |
-| 1    | -           |
-| 2    | MANUAL      |
-| 3    | STABILIZED  |
-| 4    | READY       |
-| 5    | TAKEOFF     |
-| 6    | MISSION     |
-| 7    | LAND        |
-| 8    | FLARE       |
 
 # Procedures
 
