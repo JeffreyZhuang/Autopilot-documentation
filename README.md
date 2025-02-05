@@ -57,6 +57,13 @@ Fixed packet size of 40 bytes and a payload of 38 bytes, therefore no length byt
 
 The following paylods are injected into the "payloads" section of the transport protocol layer.
 
+| Payload Type   | Value |
+| -------------- | ----- |
+| Telemetry      | 0     |
+| Command        | 1     |
+| Waypoint       | 2     |
+| Landing Target | 3     |
+
 ### Telemetry Payload
 
 | Byte Index | Content          | Type     |
@@ -71,6 +78,8 @@ The following paylods are injected into the "payloads" section of the transport 
 | 15-18      | Longitude        | float    |
 | 29         | Mode ID          | uint8_t  |
 | 30-37      | Empty            |          |
+
+#### Mode IDs
 
 | Mode | Name        |
 | ---- | ----------- |
@@ -92,10 +101,12 @@ The following paylods are injected into the "payloads" section of the transport 
 | 1          | Command ID       | uint8_t |
 | 2-37       | Empty            |         |
 
-| Command              | Command ID Value |
-| -------------------- | ---------------- |
-| Calibrate Gyroscopes | 0                |
-| Calibrate Barometer  | 1                |
+#### Command IDs
+
+| Command ID           | Value |
+| -------------------- |------ |
+| Calibrate Gyroscopes | 0     |
+| Calibrate Barometer  | 1     |
 
 ### Waypoint Payload
 
@@ -108,11 +119,15 @@ The following paylods are injected into the "payloads" section of the transport 
 | 10-13      | Position Down    | float   |
 | 14-37      | Empty            |         |
 
-| Payload Type | Value |
-| ------------ | ----- |
-| Telemetry    | 0     |
-| Command      | 1     |
-| Waypoint     | 2     |
+### Landing Target Payload
+
+| Byte Index | Content          | Type    |
+| ---------- | -----------------| ------- |
+| 0          | Payload Type (3) | uint8_t |
+| 2-5        | Latitude         | float   |
+| 6-9        | Longitude        | float   |
+| 10-13      | Heading          | float   |
+| 14-37      | Empty            |         |
 
 # Procedures
 
