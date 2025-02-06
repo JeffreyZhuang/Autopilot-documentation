@@ -82,7 +82,9 @@ The following paylods are injected into the "payloads" section of the transport 
 | 15-18      | Longitude deg    | float    |
 | 19         | Mode ID          | uint8_t  |
 | 20         | Target Waypoint Index | uint8_t |
-| 21-37      | Empty            |          |
+| 21-22      | Pitch Setpoint deg*100    | int16_t  |
+| 23-24      | Heading Setpoint deg*100  | uint16_t |
+| 25-37      | Empty            |          |
 
 #### Mode IDs
 
