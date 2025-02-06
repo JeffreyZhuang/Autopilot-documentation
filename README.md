@@ -125,10 +125,10 @@ The following paylods are injected into the "payloads" section of the transport 
 | Byte Index | Content          | Type    |
 | ---------- | -----------------| ------- |
 | 0          | Payload Type (3) | uint8_t |
-| 2-5        | Latitude         | float   |
-| 6-9        | Longitude        | float   |
-| 10-13      | Heading          | float   |
-| 14-37      | Empty            |         |
+| 1-4        | Latitude         | float   |
+| 5-8        | Longitude        | float   |
+| 9-12       | Heading          | float   |
+| 13-37      | Empty            |         |
 
 # Procedures
 
