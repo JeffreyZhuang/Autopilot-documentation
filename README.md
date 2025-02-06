@@ -74,8 +74,8 @@ The following paylods are injected into the "payloads" section of the transport 
 | 5-6        | Heading deg*100  | uint16_t |
 | 7-8        | Altitude m*10    | int16_t  |
 | 9-10       | Speed m/s*10     | int16_t  |
-| 11-14      | Latitude         | float    |
-| 15-18      | Longitude        | float    |
+| 11-14      | Latitude deg     | float    |
+| 15-18      | Longitude deg    | float    |
 | 19         | Mode ID          | uint8_t  |
 | 20         | Target Waypoint Index | uint8_t |
 | 21-37      | Empty            |          |
