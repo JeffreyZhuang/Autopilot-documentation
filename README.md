@@ -78,7 +78,7 @@ The following paylods are injected into the "payloads" section of the transport 
 | 15-18      | Longitude        | float    |
 | 19         | Mode ID          | uint8_t  |
 | 20         | Target Waypoint Index | uint8_t |
-| 31-37      | Empty            |          |
+| 21-37      | Empty            |          |
 
 #### Mode IDs
 
