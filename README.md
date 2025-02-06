@@ -13,6 +13,10 @@ The Kalman filter calculates the position in meters in reference to the position
 
 # Software Architecture
 
+## Controller Tuning
+
+First, a manual flight is flown collecting data of inputs and outputs (elevator vs pitch, aileron vs roll, pitch vs altitude, roll vs heading, etc). A Python program is used to fit the data with a transfer function and the P controllers are then designed for stability using frequency domain techniques.
+
 ## Update Rates
 
 The main loop and PID controllers run at 100Hz. The servo library limits the pwm signal update rate to the maximum allowed by the servos (50Hz).
