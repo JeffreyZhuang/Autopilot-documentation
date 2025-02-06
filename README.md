@@ -76,8 +76,9 @@ The following paylods are injected into the "payloads" section of the transport 
 | 9-10       | Speed m/s*10     | int16_t  |
 | 11-14      | Latitude         | float    |
 | 15-18      | Longitude        | float    |
-| 29         | Mode ID          | uint8_t  |
-| 30-37      | Empty            |          |
+| 19         | Mode ID          | uint8_t  |
+| 20         | Target Waypoint Index | uint8_t |
+| 31-37      | Empty            |          |
 
 #### Mode IDs
 
