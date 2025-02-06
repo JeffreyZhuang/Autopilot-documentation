@@ -13,10 +13,6 @@ The Kalman filter calculates the position in meters in reference to the position
 
 # Software Architecture
 
-## Controller Tuning
-
-First, a manual flight is flown collecting data of inputs and outputs (elevator vs pitch, aileron vs roll, pitch vs altitude, roll vs heading, etc). A Python program is used to fit the data with a transfer function and the P controllers are then designed for stability using frequency domain techniques.
-
 ## Update Rates
 
 The main loop and PID controllers run at 100Hz. The servo library limits the pwm signal update rate to the maximum allowed by the servos (50Hz).
@@ -39,7 +35,11 @@ The main loop and PID controllers run at 100Hz. The servo library limits the pwm
 - **FLARE:** Throttle is cut, and the plane targets a sink rate of LAND_SINK with a maximum pitch angle of LAND_PITCH_DEG and a roll angle of 0 to prevent wing strike. When the gyroscopes observe no motion for 10 seconds, the plane switches to TOUCHDOWN mode.
 - **SAFE:** Everything is turned off and disarmed for safe recovery of the aircraft. Maybe switch to safe system mode?
 
-# Controller Diagrams
+# Controller Theory
+
+## Controller Tuning
+
+First, a manual flight is flown collecting data of inputs and outputs (elevator vs pitch, aileron vs roll, pitch vs altitude, roll vs heading, etc). A Python program is used to fit the data with a transfer function and the P controllers are then designed for stability using frequency domain techniques.
 
 # Parameters and Configurations
 
