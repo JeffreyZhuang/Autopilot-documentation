@@ -70,21 +70,21 @@ The following paylods are injected into the "payloads" section of the transport 
 
 ### Telemetry Payload
 
-| Byte Index | Content          | Type     |
-| ---------- | ---------------- | -------- |
+| Byte Index | Content          | Type     | Unit | Multiplier |
+| ---------- | ---------------- | -------- | ---- | ---------- |
 | 0          | Payload Type (0) | uint8_t  |
-| 1-2        | Roll deg*100     | int16_t  |
-| 3-4        | Pitch deg*100    | int16_t  |
-| 5-6        | Heading deg*100  | uint16_t |
-| 7-8        | Altitude m*10    | int16_t  |
-| 9-10       | Speed m/s*10     | int16_t  |
-| 11-14      | Latitude deg     | float    |
-| 15-18      | Longitude deg    | float    |
-| 19         | Mode ID          | uint8_t  |
-| 20         | Target Waypoint Index | uint8_t |
-| 21-22      | Pitch Setpoint deg*100    | int16_t  |
-| 23-24      | Heading Setpoint deg*100  | uint16_t |
-| 25-37      | Empty            |          |
+| 1-2        | Roll             | int16_t  | deg  | 1E-2       |
+| 3-4        | Pitch            | int16_t  | deg  | 1E-2       |
+| 5-6        | Heading          | uint16_t | deg  | 1E-2       |
+| 7-8        | Altitude         | int16_t  | dm   |            |
+| 9-10       | Airspeed         | int16_t  | dm/s |
+| 11-14      | Latitude         | float    | deg  |
+| 15-18      | Longitude        | float    | deg  |
+| 19         | Mode ID          | uint8_t  |      |
+| 20         | Target Waypoint Index | uint8_t | | |
+| 21-22      | Pitch Setpoint    | int16_t  | deg | 1E-2|
+| 23-24      | Heading Setpoint  | uint16_t | deg | 1E-2|
+| 25-37      | Empty            |          |||
 
 #### Mode IDs
 
