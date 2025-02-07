@@ -82,7 +82,7 @@ The following paylods are injected into the "payloads" section of the transport 
 | 15-18      | Longitude        | float    | deg  |
 | 19         | Mode ID          | uint8_t  |      |
 | 20         | Target Waypoint Index | uint8_t |  |            |
-| 21         | Cell Voltage     | uint8_t  | V    | 1E-2       |
+| 21         | Cell Voltage     | uint8_t  | V    | 5E-3       |
 | 22-37      | Empty            |          |      |      |
 
 #### Mode IDs
