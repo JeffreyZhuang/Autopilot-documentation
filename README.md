@@ -141,6 +141,10 @@ The following paylods are injected into the "payloads" section of the transport 
 
 # Procedures
 
+## Prep
+
+Make sure micro-SD card inserted
+
 ## Startup
 
 Turn direct and mode switches to manual, cut throttle, and wait until GNSS fix and it will switch to from boot to manual mode.
