@@ -73,17 +73,21 @@ The following paylods are injected into the "payloads" section of the transport 
 | Byte Index | Content          | Type     | Unit | Multiplier |
 | ---------- | ---------------- | -------- | ---- | ---------- |
 | 0          | Payload Type (0) | uint8_t  |
-| 1-2        | Roll             | int16_t  | deg  | 1E+2       |
-| 3-4        | Pitch            | int16_t  | deg  | 1E+2       |
-| 5-6        | Heading          | uint16_t | deg  | 1E+2       |
+| 1-2        | Roll             | int16_t  | deg  | 1E-2       |
+| 3-4        | Pitch            | int16_t  | deg  | 1E-2       |
+| 5-6        | Heading          | uint16_t | deg  | 1E-2       |
 | 7-8        | Altitude         | int16_t  | dm   |            |
 | 9-10       | Airspeed         | int16_t  | dm/s |
 | 11-14      | Latitude         | float    | deg  |
 | 15-18      | Longitude        | float    | deg  |
 | 19         | Mode ID          | uint8_t  |      |
 | 20         | Target Waypoint Index | uint8_t |  |            |
-| 21         | Cell Voltage     | uint8_t  | V    | 5E+1       |
-| 22-37      | Empty            |          |      |      |
+| 21         | Cell Voltage     | uint8_t  | V    | 5E-1       |
+| 22         | Current          | uint8_t  | A    | 5E1        |
+| 23         | Capacity Consumed | uint8_t | Ah   | |
+| 24         | GPS Sats | uint8_t |  | |
+| 25         | GPS Fix | uint8_t | | | 
+| 26-37      | Empty            |          |      |      |
 
 #### Mode IDs
 
