@@ -13,6 +13,10 @@ The Kalman filter calculates the position in meters in reference to the position
 
 # Software Architecture
 
+## Tasks
+
+There are two tasks that need to run simultaneously, a main task and a background task. The main task is where the time critical autopilot code is run, and the background task is for writting large buffers of multiple chunks to micro-SD card using DMA. For STM32 HAL, the main task is executed from a hardware timer interrupt at 100Hz and the background task is executed by a while loop in main. 
+
 ## Update Rates
 
 The main loop and PID controllers run at 100Hz. The servo library limits the pwm signal update rate to the maximum allowed by the servos (50Hz).
