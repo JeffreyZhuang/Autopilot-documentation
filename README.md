@@ -148,6 +148,7 @@ Make sure micro-SD card inserted
 ## Startup
 
 Turn direct and mode switches to manual, cut throttle, and wait until GNSS fix and it will switch to from boot to manual mode.
+Put it into stabalize mode to make sure control directions are correct.
 
 ## Takeoff
 
