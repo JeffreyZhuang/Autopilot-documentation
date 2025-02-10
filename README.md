@@ -77,9 +77,9 @@ The following paylods are injected into the "payloads" section of the transport 
 | Byte Index | Content          | Type     | Unit | Multiplier |
 | ---------- | ---------------- | -------- | ---- | ---------- |
 | 0          | Payload Type (0) | uint8_t  |
-| 1-2        | Roll             | int16_t  | deg  | 1E-2       |
-| 3-4        | Pitch            | int16_t  | deg  | 1E-2       |
-| 5-6        | Heading          | uint16_t | deg  | 1E-2       |
+| 1-2        | Roll             | int16_t  | deg  | 1E-1       |
+| 3-4        | Pitch            | int16_t  | deg  | 1E-1       |
+| 5-6        | Heading          | uint16_t | deg  | 1E-1       |
 | 7-8        | Altitude         | int16_t  | dm   |            |
 | 9-10       | Airspeed         | int16_t  | dm/s |
 | 11-14      | Latitude         | float    | deg  |
