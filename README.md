@@ -143,6 +143,10 @@ The following paylods are injected into the "payloads" section of the transport 
 | 9-12       | Heading          | float   |
 | 13-37      | Empty            |         |
 
+# Calibration
+
+Use recorded data for compass calibration
+
 # Procedures
 
 ## Prep
