@@ -151,6 +151,7 @@ The following paylods are injected into the "payloads" section of the transport 
 | 1          | Consistent Overhead Byte Shuffling | uint8_t   |       |
 | 2-13       | Gyroscope     X-Z                  | float[3]  | deg/s |
 | 14-25      | Accelerometer X-Z                  | float[3]  | g     |
+| 14-25      | Magnetometer  X-Z                  | float[3]  | uT    |
 | 26-41      | Raw GNSS Lat/Lon                   | double[2] | deg   |
 | 42-53      | Position Estimate NED              | float[3]  | m     |
 | 54-65      | Velocity Estimate NED              | float[3]  | m/s   |
