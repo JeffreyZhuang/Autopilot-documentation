@@ -155,7 +155,13 @@ The following paylods are injected into the "payloads" section of the transport 
 | 26-41      | Raw GNSS Lat/Lon                   | double[2] | deg   |
 | 42-53      | Position Estimate NED              | float[3]  | m     |
 | 54-65      | Velocity Estimate NED              | float[3]  | m/s   |
-| 66-77      | Orientation RPY                    | float[3]  | Deg   |
+| 66-77      | Orientation RPY                    | float[3]  | deg   |
+| 66-77      | System Mode                        | uint8_t   |       |
+| 66-77      | Auto Mode                          | uint8_t   |       |
+| 66-77      | Manual Mode                        | uint8_t   |       |
+| 66-77      | Battery Voltage                    | uint8_t   |       |
+| 66-77      | Battery Current                    | uint8_t   |       |
+| 66-77      | Autopilot Current                  | uint8_t   |       |
  
 # Calibration
 
