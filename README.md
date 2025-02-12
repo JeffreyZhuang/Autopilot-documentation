@@ -145,11 +145,13 @@ The following paylods are injected into the "payloads" section of the transport 
 
 # Storage
 
-| Byte Index | Content                            | Type     |
-| ---------- | ---------------------------------- | -------- |
-| 0          | Start byte (0x00)                  | uint8_t  |
-| 1          | Consistent Overhead Byte Shuffling | uint8_t  |
-| 2-9       | Accelerometer x-z                  | float[3] |
+| Byte Index | Content                            | Type      |
+| ---------- | ---------------------------------- | --------- |
+| 0          | Start byte (0x00)                  | uint8_t   |
+| 1          | Consistent Overhead Byte Shuffling | uint8_t   |
+| 2-13       | Gyroscope     X-Z                  | float[3]  |
+| 14-25      | Accelerometer X-Z                  | float[3]  |
+| 26-41      | Accelerometer X-Z                  | double[2] |
 
 # Calibration
 
