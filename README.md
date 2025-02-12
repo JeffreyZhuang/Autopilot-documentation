@@ -143,6 +143,14 @@ The following paylods are injected into the "payloads" section of the transport 
 | 9-12       | Heading          | float   |
 | 13-37      | Empty            |         |
 
+# Storage
+
+| Byte Index | Content                            | Type     |
+| ---------- | ---------------------------------- | -------- |
+| 0          | Start byte (0x00)                  | uint8_t  |
+| 1          | Consistent Overhead Byte Shuffling | uint8_t  |
+| 2-9       | Accelerometer x-z                  | float[3] |
+
 # Calibration
 
 Use recorded data for compass calibration
