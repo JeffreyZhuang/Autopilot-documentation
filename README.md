@@ -162,6 +162,13 @@ The following paylods are injected into the "payloads" section of the transport 
 | 66-77      | Battery Voltage                    | uint8_t   |       |
 | 66-77      | Battery Current                    | uint8_t   |       |
 | 66-77      | Autopilot Current                  | uint8_t   |       |
+| 66-77      | Elevator                           | uint8_t   |       |
+| 66-77      | Aileron                            | uint8_t   |       |
+| 66-77      | Throttle                           | uint8_t   |       |
+| 66-77      | Orientation Setpoint RPY           | float[3]  | deg   |
+| 66-77      | Altitude setopint                  | float     | m     |
+| 66-77      | Waypoint Lat/Lon                   | double[2] | deg   |
+| 66-77      | Waypoint Altitude                  | float     | m   |
  
 # Calibration
 
