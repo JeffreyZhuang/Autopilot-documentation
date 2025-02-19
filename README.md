@@ -174,6 +174,10 @@ The following paylods are injected into the "payloads" section of the transport 
 
 Use recorded data for compass calibration
 
+# ESC Calibration
+
+In DIRECT mode, move sticks to calibrate ESC manually.
+
 # Procedures
 
 ## Prep
