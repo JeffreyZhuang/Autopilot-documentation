@@ -169,6 +169,10 @@ The following paylods are injected into the "payloads" section of the transport 
 | 66-77      | Altitude setopint                  | float     | m     |
 | 66-77      | Waypoint Lat/Lon                   | double[2] | deg   |
 | 66-77      | Waypoint Altitude                  | float     | m   |
+
+# Loading parameters
+
+The struct in parameters.h is sent through radio
  
 # Calibration
 
