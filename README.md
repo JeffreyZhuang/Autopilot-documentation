@@ -172,7 +172,7 @@ The following paylods are injected into the "payloads" section of the transport 
  
 # Calibration
 
-Use recorded data for compass calibration
+Use recorded data for compass, accelerometer, and gyroscope calibration
 
 # ESC Calibration
 
