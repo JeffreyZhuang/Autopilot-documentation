@@ -13,6 +13,26 @@ The Kalman filter calculates the position in meters in reference to the position
 
 # Software Architecture
 
+## Modules
+
+### AHRS
+
+### Control
+
+### ControlAllocator
+
+### Guidance
+
+### Navigation
+
+### RCHandler
+
+### Storage
+
+### TECS
+
+### Telemetry
+
 ## Tasks
 
 There are two tasks that need to run simultaneously, a main task and a background task. The main task is where the time critical autopilot code is run, and the background task is for writting large buffers of multiple chunks to micro-SD card using DMA. For STM32 HAL, the main task is executed from a hardware timer interrupt at 100Hz and the background task is executed by a while loop in main. 
