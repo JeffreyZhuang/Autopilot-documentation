@@ -229,6 +229,10 @@ Toggle the manual switch and fly the plane in DIRECT mode. The plane will not sw
 
 Flip the manual switch to put the plane into DIRECT mode.
 
+## After Crash
+
+Turn motor off. Look at current draw to make sure its off.
+
 # TODO
 - Use Python to read data log in micro-SD card
 - Commands to calibrate barometer, gyroscope, etc.
