@@ -7,8 +7,15 @@
 
 # Scope
 
-Small hand-launched and belly landing UAVs. The GCS is mandatory to operate it like most military UAVs.
+Small hand-launched and belly landing UAVs. The GCS is mandatory for operation like most military UAVs. 
 
+# Sensors
+- Gyroscope
+- Accelerometer
+- Magnetometer
+- Barometer
+- GNSS
+- Optical Flow
 
 # Coordinate System
 
