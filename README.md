@@ -5,8 +5,6 @@
   <img src="images/mainboard.webp" width="20%"/>
 </p>
 
-Check the wiki
-
 # Scope
 
 The goal is to write simple code for an RC plane autopilot that is easy to understand, easy to trace, and follows best practices for safety-critical embedded firmware.
