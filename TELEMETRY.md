@@ -25,8 +25,8 @@
 | Longitude        | float    | deg  |
 | Mode ID          | uint8_t  |      |
 | Target Waypoint Index | uint8_t |  |         
-| Cell Voltage     | uint8_t  | $5\cdot10^{-1}$ V    |    
-| Current          | uint8_t  | $5\cdot10^{-1}$ A    |   
+| Cell Voltage     | uint8_t  | $5\times10^{-1}$ V    |    
+| Current          | uint8_t  | $5\times10^{-1}$ A    |   
 | Capacity Consumed | uint8_t | Ah   | 
 | GPS Sats | uint8_t |  | |
 | GPS Fix | uint8_t | | | 
