@@ -30,23 +30,47 @@ The Kalman filter calculates the position in meters in reference to the position
 
 # Software Architecture
 
-## Modules
+# Diagram
 
-### AHRS
+# AHRS
 
-### Control
+Calculates roll, pitch, heading
 
-### ControlAllocator
+# Commander
 
-### Guidance
+Detects state transitions and changes states
 
-### Navigation
+# Control
 
-### RCHandler
+Calculates control surface commands
 
-### Storage
+# Guidance
 
-### TECS
+Calculates heading and altitude setpoints from waypoints and switches between waypoints
+
+# Mixer
+
+Converts control surface commands into PWM values and sends them to servos
+
+# Navigation
+
+Kalman filter to calculate position and velocity of the plane
+
+# RC
+
+Reads data from RC transmitter and converts stick and switch PWM values into usable variables for plane
+
+# Storage
+
+Stores data into buffer and writes buffer to storage when full
+
+# TECS
+
+Calculates energy, energy setpoint, energy balance, and energy balance setpoints for the altitude and speed controllers to manage simultaneous control of airspeed and altitude
+
+# Telemetry
+
+Parses messages from GCS and transmits telemetry
 
 ### Telemetry
 
