@@ -28,7 +28,8 @@
 | Mode ID          | uint8_t  |      |
 | Target Waypoint Index | uint8_t |  |         
 | Cell Voltage     | uint16_t  | mV    |    
-| Current          | uint16_t  | mA    |   
+| Battery Current          | uint16_t  | mA    |   
 | Capacity Consumed | uint16_t | mAh   | 
+| Autopilot Current | uint16_t | mA |
 | GPS Sats | uint8_t |  | |
 | GPS Fix | uint8_t | | | 
