@@ -14,19 +14,19 @@
 
 ### Telemetry (Message ID: 1)
 
-| Content          | Type     | Unit | Multiplier |
-| ---------------- | -------- | ---- | ---------- |
-| Roll             | int16_t  | $10^{-2}$ deg  | 1E-2       |
-| Pitch            | int16_t  | deg  | 1E-2       |
-| Heading          | uint16_t | deg  | 1E-1       |
-| Altitude         | int16_t  | dm   |            |
-| Airspeed         | int16_t  | dm/s | |
-| Latitude         | float    | deg  |         |
+| Content          | Type     | Unit |
+| ---------------- | -------- | ---- |
+| Roll             | int16_t  | $10^{-2}$ deg  |
+| Pitch            | int16_t  | $10^{-2}$ deg  |
+| Heading          | uint16_t | $10^{-2}$ deg  |
+| Altitude         | int16_t  | dm   |          
+| Airspeed         | int16_t  | dm/s |
+| Latitude         | float    | deg  |       
 | Longitude        | float    | deg  |
 | Mode ID          | uint8_t  |      |
-| Target Waypoint Index | uint8_t |  |            |
-| Cell Voltage     | uint8_t  | V    | 5E-1       |
-| Current          | uint8_t  | A    | 5E1        |
-| Capacity Consumed | uint8_t | Ah   | |
+| Target Waypoint Index | uint8_t |  |         
+| Cell Voltage     | uint8_t  | $5\cdot10^{-1}$ V    |    
+| Current          | uint8_t  | $5\cdot10^{-1}$ A    |   
+| Capacity Consumed | uint8_t | Ah   | 
 | GPS Sats | uint8_t |  | |
 | GPS Fix | uint8_t | | | 
