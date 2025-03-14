@@ -12,7 +12,7 @@ The state is stored in Autopilot/plane.h (Plane::system_mode, Plane::flight_mode
 - **STABILIZED:** The pilot directly commands the roll and pitch angle. Thrust is directly set by the pilot.
 
 **Auto Modes**
-- **TAKEOFF** The throttle is set manually and the plane holds a pitch angle TAKEOFF_PTCH. The roll angle is set to 0 to prevent wingstrike. Once the altitude is above the takeoff altitude threshold TAKEOFF_ALT, the plane switches to MISSION mode. Only gyroscope dead reckoning for orientation.
+- **TAKEOFF** The throttle is set manually and the plane holds a pitch angle `Parameters::takeoff_ptch`. The roll angle is set to 0 to prevent wingstrike. Once the altitude is above the takeoff altitude threshold TAKEOFF_ALT, the plane switches to MISSION mode. Only gyroscope dead reckoning for orientation. The integrator in the control loops are disabled.
 - **MISSION:** Waypoint following. When passed final waypoint, the plane siwtches to LAND mode.
 - **LAND:** Adjust altitude setpoint to follows a 10 degree glideslope to the landing point. Track heading is set to the runway heading. When the altitude is below LAND_FLARE_ALT, the plane switches to FLARE mode.
 - **FLARE:** Throttle is cut, and the plane targets a sink rate of LAND_SINK with a maximum pitch angle of LAND_PITCH_DEG and a roll angle of 0 to prevent wing strike. When the gyroscopes observe no motion for 10 seconds, the plane switches to TOUCHDOWN mode.
