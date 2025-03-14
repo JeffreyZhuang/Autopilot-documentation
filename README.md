@@ -243,6 +243,8 @@ Flip the manual switch to put the plane into DIRECT mode.
 
 Turn motor off. Look at current draw to make sure its off.
 
+# Learning Resources
+
 # TODO
 - Use Python to read data log in micro-SD card
 - Commands to calibrate barometer, gyroscope, etc.
