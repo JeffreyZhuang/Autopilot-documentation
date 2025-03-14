@@ -50,7 +50,7 @@ Calculates heading and altitude setpoints from waypoints and switches between wa
 
 # Mixer
 
-Converts control surface commands into PWM values and sends them to servos
+Converts control surface commands into PWM values (decides between rudder or ailerons) and sends them to servos
 
 # Navigation
 
