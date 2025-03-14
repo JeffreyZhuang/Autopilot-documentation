@@ -20,7 +20,7 @@
 | Pitch            | int16_t  | $10^{-2}$ deg  |
 | Heading          | uint16_t | $10^{-2}$ deg  |
 | Altitude         | int16_t  | dm   |          
-| Airspeed         | int16_t  | dm/s |
+| Airspeed         | uint16_t  | dm/s |
 | GNSS Latitude         | int32_t    | $10^{-7}$ deg  |       
 | GNSS Longitude        | int32_t    | $10^{-7}$ deg  |
 | Filtered Position North | float | m|
