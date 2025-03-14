@@ -16,7 +16,7 @@
 
 | Content          | Type     | Unit | Multiplier |
 | ---------------- | -------- | ---- | ---------- |
-| Roll             | int16_t  | deg  | 1E-2       |
+| Roll             | int16_t  | $10^{-2}$ deg  | 1E-2       |
 | Pitch            | int16_t  | deg  | 1E-2       |
 | Heading          | uint16_t | deg  | 1E-1       |
 | Altitude         | int16_t  | dm   |            |
