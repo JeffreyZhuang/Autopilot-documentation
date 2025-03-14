@@ -20,14 +20,14 @@
 | Roll             | int16_t  | deg  | 1E-1       |
 | Pitch            | int16_t  | deg  | 1E-1       |
 | Heading          | uint16_t | deg  | 1E-1       |
- | Altitude         | int16_t  | dm   |            |
-      | Airspeed         | int16_t  | dm/s |
-   | Latitude         | float    | deg  |
-      | Longitude        | float    | deg  |
-       | Mode ID          | uint8_t  |      |
-        | Target Waypoint Index | uint8_t |  |            |
-         | Cell Voltage     | uint8_t  | V    | 5E-1       |
-        | Current          | uint8_t  | A    | 5E1        |
-       | Capacity Consumed | uint8_t | Ah   | |
-         | GPS Sats | uint8_t |  | |
-       | GPS Fix | uint8_t | | | 
+| Altitude         | int16_t  | dm   |            |
+| Airspeed         | int16_t  | dm/s | |
+| Latitude         | float    | deg  |         |
+| Longitude        | float    | deg  |
+| Mode ID          | uint8_t  |      |
+| Target Waypoint Index | uint8_t |  |            |
+| Cell Voltage     | uint8_t  | V    | 5E-1       |
+| Current          | uint8_t  | A    | 5E1        |
+| Capacity Consumed | uint8_t | Ah   | |
+| GPS Sats | uint8_t |  | |
+| GPS Fix | uint8_t | | | 
