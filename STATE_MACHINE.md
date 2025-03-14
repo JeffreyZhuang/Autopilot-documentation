@@ -1,6 +1,6 @@
 # State Machine
 
-The state is stored in Autopilot/plane.h: Plane::system_mode, Plane::flight_mode, Plane::manual_mode. The state transitions can be found in Autopilot/Modules/Commander/commander.cpp
+The state is stored in Autopilot/plane.h (Plane::system_mode, Plane::flight_mode, Plane::manual_mode). The state transitions can be found in Autopilot/Modules/Commander/commander.cpp. In each of the individual modules, there is a switch statement in the update function that determines what to execute depending on the plane's state. The update functions get called every loop iteration as seen in Autopilot/autopilot.cpp (Autopilot::main_task()).
 
 **System Modes**
 - **BOOT:** Calibrate barometer, recieve waypoints from GCS, set home position to first GPS fix. Once boot is complete, the transmitter is in a safe state, and the vehicle has been armed, the system mode switches to flight.
