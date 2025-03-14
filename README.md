@@ -5,6 +5,8 @@
   <img src="images/mainboard.webp" width="45%"/>
 </p>
 
+Check the wiki
+
 # Scope
 
 Small hand-launched and belly landing UAVs. The GCS is mandatory for operation like most military UAVs. 
