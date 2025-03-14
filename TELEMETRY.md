@@ -32,4 +32,4 @@
 | Capacity Consumed | uint16_t | mAh   | 
 | Autopilot Current | uint16_t | mA |
 | GPS Sats | uint8_t |  | |
-| GPS Fix | uint8_t | | | 
+| GPS Fix | bool | | | 
