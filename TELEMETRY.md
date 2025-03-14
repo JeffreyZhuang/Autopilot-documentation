@@ -16,7 +16,6 @@
 
 | Content          | Type     | Unit | Multiplier |
 | ---------------- | -------- | ---- | ---------- |
-| Payload Type (0) | uint8_t  |
 | Roll             | int16_t  | deg  | 1E-1       |
 | Pitch            | int16_t  | deg  | 1E-1       |
 | Heading          | uint16_t | deg  | 1E-1       |
