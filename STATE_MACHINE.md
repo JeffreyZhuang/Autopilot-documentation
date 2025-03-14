@@ -1,6 +1,6 @@
 # State Machine
 
-The state is stored in Autopilot/plane.h (Plane::system_mode, Plane::flight_mode, Plane::manual_mode). The state transitions can be found in Autopilot/Modules/Commander/commander.cpp. In each of the individual modules, there is a switch statement in the update function that determines what to execute depending on the plane's state. The update functions get called every loop iteration as seen in Autopilot/autopilot.cpp (Autopilot::main_task()).
+The state is stored in Autopilot/plane.h (Plane::system_mode, Plane::flight_mode, Plane::manual_mode). The state transitions can be found in Autopilot/Modules/Commander/commander.cpp. Each of the individual modules has an update function with a switch statement that determines what to execute depending on the plane's state. The update functions get called every loop iteration as seen in Autopilot/autopilot.cpp (Autopilot::main_task()).
 
 **System Modes**
 - **CONFIG:** Waits for parameters and waypoints to be loaded before switching system mode to BOOT. Nothing else gets executed.
