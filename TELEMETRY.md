@@ -21,8 +21,8 @@
 | Heading          | uint16_t | $10^{-2}$ deg  |
 | Altitude         | int16_t  | dm   |          
 | Airspeed         | int16_t  | dm/s |
-| Latitude         | float    | deg  |       
-| Longitude        | float    | deg  |
+| Latitude         | int32_t    | $10^{-7}$ deg  |       
+| Longitude        | int32_t    | $10^{-7}$ deg  |
 | Mode ID          | uint8_t  |      |
 | Target Waypoint Index | uint8_t |  |         
 | Cell Voltage     | uint16_t  | mV    |    
