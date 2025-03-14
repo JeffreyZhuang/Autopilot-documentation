@@ -9,6 +9,7 @@ Check the wiki
 
 # Scope
 
+The goal is to write simple code for an RC plane autopilot that is simple to trace.
 Small hand-launched and belly landing UAVs. The GCS is mandatory for operation like most military UAVs. 
 
 # Sensors
