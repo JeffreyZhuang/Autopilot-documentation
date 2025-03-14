@@ -7,7 +7,8 @@
 
 # Scope
 
-Small hand-launched UAVs like the RQ-11
+Small hand-launched and belly landing UAVs
+
 
 # Coordinate System
 
