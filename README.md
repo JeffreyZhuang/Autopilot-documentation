@@ -7,7 +7,7 @@
 
 # Scope
 
-Small hand-launched and belly landing UAVs
+Small hand-launched and belly landing UAVs. The GCS is mandatory to operate it like most military UAVs.
 
 
 # Coordinate System
