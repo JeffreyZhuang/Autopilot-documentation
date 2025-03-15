@@ -22,6 +22,7 @@
 | Heading          | uint16_t | $10^{-2}$ deg  |
 | Altitude         | int16_t  | dm   |          
 | Airspeed         | uint16_t  | dm/s |
+| Altitude Setpoint | int16_t  | dm   |    
 | GNSS Latitude         | int32_t    | $10^{-7}$ deg  |       
 | GNSS Longitude        | int32_t    | $10^{-7}$ deg  |
 | Position Estimate North | float | m |
