@@ -15,6 +15,7 @@ The goal is to write simple code for an RC plane autopilot that is easy to under
 - Maximum altitude of 3 km
 - Maximum number of waypoints of 255
 - The GCS is mandatory for operation like most military UAVs
+- A takeoff point, landing point, and minimum of 1 waypoint required for operation
 
 # Sensors
 - Gyroscope
