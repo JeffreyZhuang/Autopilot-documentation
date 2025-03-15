@@ -11,7 +11,7 @@ The goal is to write simple code for an RC plane autopilot that is easy to under
 - For small hand-launched and belly landing fixed-wing UAVs
 - Automatic takeoff, waypoint following, and landing
 - Maximum operation time of 24 hrs
-- Maximum range of 20 km
+- Maximum range of 50 km
 - Maximum number of waypoints of 255
 - The GCS is mandatory for operation like most military UAVs
 
