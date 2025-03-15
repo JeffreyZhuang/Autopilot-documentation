@@ -34,6 +34,8 @@
 | Autopilot Current | uint16_t | mA |
 | GPS Sats | uint8_t | |
 | GPS Fix | bool | | 
+| Aileron | uint8_t | %|
+| Elevator | uint8_t | %|
 | Throttle | uint8_t | %|
 
 ### Parameters (Message ID: 2)
