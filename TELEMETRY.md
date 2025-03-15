@@ -24,8 +24,8 @@
 | Airspeed         | uint16_t  | dm/s |
 | GNSS Latitude         | int32_t    | $10^{-7}$ deg  |       
 | GNSS Longitude        | int32_t    | $10^{-7}$ deg  |
-| Filtered Position North | float | m|
-| Filtered Position East |  float | m|
+| Filtered Position North | int32_t | cm |
+| Filtered Position East |  int32_t | cm |
 | Mode ID          | uint8_t  |      |
 | Target Waypoint Index | uint8_t |  |         
 | Cell Voltage     | uint16_t  | mV    |    
