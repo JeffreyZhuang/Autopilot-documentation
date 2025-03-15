@@ -44,4 +44,8 @@
 
 | Content          | Type     | Unit |
 | ---------------- | -------- | ---- |
-| Waypoint Index   | uint8_t  | 
+| Waypoint Index   | uint8_t  |      |
+| Total Number of Waypoints   | uint8_t  |      |
+| Latitude   | int32_t  |   $10^{-7}$ deg   |
+| Longitude | int32_t | $10^{-7}$ deg|
+| Altitude | int16_t | dm | 
