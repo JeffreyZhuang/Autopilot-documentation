@@ -32,5 +32,10 @@
 | Battery Current          | uint16_t  | mA    |   
 | Capacity Consumed | uint16_t | mAh   | 
 | Autopilot Current | uint16_t | mA |
-| GPS Sats | uint8_t |  | |
-| GPS Fix | bool | | | 
+| GPS Sats | uint8_t | |
+| GPS Fix | bool | | 
+| Throttle | uint8_t | %|
+
+### Parameters (Message ID: 2)
+
+### Waypoint (Message ID: 3)
