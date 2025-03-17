@@ -19,6 +19,7 @@ The goal is to write simple code for an RC plane autopilot that is easy to under
 - Extra servo channels for payloads
 - The parameters are loaded through radio. This is more convenient and also safer compared to modifying the firmware because you might make mistake in firmware.
 - 8 PWM output channels
+- PWM Channel 1, 2, and 3 reserved for aileron, elevator, and throttle. Re-arrange wires to swap, not in software.
 
 # Sensors
 - Gyroscope
