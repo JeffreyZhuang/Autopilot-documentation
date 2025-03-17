@@ -17,6 +17,7 @@ The goal is to write simple code for an RC plane autopilot that is easy to under
 - The GCS is mandatory for operation like most military UAVs
 - A takeoff point, landing point, and minimum of 1 waypoint required for operation
 - Extra servo channels for payloads
+- The parameters are loaded through radio. This is more convenient and also safer compared to modifying the firmware because you might make mistake in firmware.
 
 # Sensors
 - Gyroscope
