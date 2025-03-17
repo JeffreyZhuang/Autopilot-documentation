@@ -18,6 +18,7 @@ The goal is to write simple code for an RC plane autopilot that is easy to under
 - A takeoff point, landing point, and minimum of 1 waypoint required for operation
 - Extra servo channels for payloads
 - The parameters are loaded through radio. This is more convenient and also safer compared to modifying the firmware because you might make mistake in firmware.
+- 8 PWM output channels
 
 # Sensors
 - Gyroscope
