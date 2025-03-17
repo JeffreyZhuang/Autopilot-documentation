@@ -39,9 +39,7 @@
 | Elevator | uint8_t | %|
 | Throttle | uint8_t | %|
 
-### Parameters (Message ID: 2)
-
-### Waypoint (Message ID: 3)
+### Waypoint (Message ID: 2)
 
 | Content          | Type     | Unit |
 | ---------------- | -------- | ---- |
@@ -50,3 +48,5 @@
 | Latitude   | int32_t  |   $10^{-7}$ deg   |
 | Longitude | int32_t | $10^{-7}$ deg|
 | Altitude | int16_t | dm | 
+
+### Parameters (Message ID: 3)
