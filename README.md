@@ -22,10 +22,10 @@ The goal is to write simple code for an RC plane autopilot that is easy to under
 - PWM Channel 1, 2, and 3 reserved for aileron, elevator, and throttle. Re-arrange wires to swap, not in software.
 - RC Channel 1, 2, 3, 4, 5, and 6 is aileron, elevator, rudder, throttle, manual switch, and mode switch respectively. Change settings in transmitter, not parameters. Only those 6 input channels are supported.
 - You can calibrate mag and accel by sending raw data through telemetry... GCS requests or there is a calibration page before the parameters page
-- Only 50Hz PWM servos
+- Only the same frequency servos (configured based on HAL)
 - No flaps or landing gear, only aileron elevator rudder throttle
 - Choose between Optical flow and baro-only operation
-- NO RUDDER
+- Only Elevator and Rudder control
 
 # Sensors
 - Gyroscope
