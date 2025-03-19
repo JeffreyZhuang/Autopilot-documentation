@@ -24,7 +24,8 @@ The goal is to write simple code for an RC plane autopilot that is easy to under
 - You can calibrate mag and accel by sending raw data through telemetry... GCS requests or there is a calibration page before the parameters page
 - Only 50Hz PWM servos
 - No flaps or landing gear, only aileron elevator rudder throttle
-- Must use Optical flow and does not support baro-only operation
+- Choose between Optical flow and baro-only operation
+- NO RUDDER
 
 # Sensors
 - Gyroscope
