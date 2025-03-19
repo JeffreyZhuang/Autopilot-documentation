@@ -26,6 +26,7 @@ The goal is to write simple code for an RC plane autopilot that is easy to under
 - No flaps or landing gear, only aileron elevator rudder throttle
 - Choose between Optical flow and baro-only operation
 - Only Elevator and Rudder control
+- If baro-only, you can set landing altitude
 
 # Sensors
 - Gyroscope
