@@ -50,3 +50,11 @@
 | Altitude | int16_t | dm | 
 
 ### Parameters (Message ID: 3)
+
+### List Files (Message ID: 4)
+
+File names is the time since epoch. List all the times since epoch.
+
+### Read File (Message ID: 5)
+
+Input time uint32_t for file
