@@ -58,3 +58,7 @@ File names is the time since epoch. List all the times since epoch.
 ### Read File (Message ID: 5)
 
 Input time uint32_t for file
+
+### Delete File (Message ID: 6)
+
+Input time uint32_t for file, delete file given time epoch
