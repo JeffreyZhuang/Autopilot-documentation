@@ -27,6 +27,7 @@ The goal is to write simple code for an RC plane autopilot that is easy to under
 - Choose between Optical flow and baro-only operation
 - Only Elevator and Rudder control
 - If baro-only, you can set landing altitude
+- Does not handle when RC transmitter not connected (if flying without autopilot and this happens it would crash anyways)
 
 # Sensors
 - Gyroscope
