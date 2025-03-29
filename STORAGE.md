@@ -1,6 +1,8 @@
 Packet format: 
 
 - Start byte (0x00)
+- uint8_t msg_id
+- uint16_t msg_len
 - COBS byte
 - Packet
 
