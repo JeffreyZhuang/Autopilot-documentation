@@ -6,4 +6,4 @@ Packet format:
 
 Message types:
 - Flight data
-- Parameters
+- Parameters (to remember what parameters you used during flight test)
