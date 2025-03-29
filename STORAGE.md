@@ -9,3 +9,4 @@ Packet format:
 Message types:
 - Flight data
 - Parameters (to remember what parameters you used during flight test)
+- Waypoints
