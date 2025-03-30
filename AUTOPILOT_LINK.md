@@ -65,3 +65,7 @@ Input time uint32_t for file
 ### Delete File (Message ID: 6)
 
 Input time uint32_t for file, delete file given time epoch
+
+### Command (Message ID: )
+
+- List files
