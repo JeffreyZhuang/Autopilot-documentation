@@ -1,3 +1,7 @@
+# Autopilot Link
+
+This is the packet structure used for telemetry, USB, and datalogging
+
 # Packet Serialization
 
 ## Packet Format
