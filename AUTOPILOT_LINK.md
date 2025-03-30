@@ -69,3 +69,5 @@ Input time uint32_t for file, delete file given time epoch
 ### Command (Message ID: )
 
 - List files
+- Calibration mode (tell plane to send raw imu and mag data)
+- HITL mode
